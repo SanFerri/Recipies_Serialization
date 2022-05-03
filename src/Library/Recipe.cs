@@ -39,6 +39,7 @@ namespace Recipies
         {
             Recipe deserialized = JsonSerializer.Deserialize<Recipe>(json);
             this.Steps = deserialized.Steps;
+            this.FinalProduct = deserialized.FinalProduct;
         }
     }
 }
