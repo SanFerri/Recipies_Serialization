@@ -14,8 +14,12 @@ namespace Recipies
     public class Recipe : IJsonConvertible
     {
         // private ArrayList steps = new ArrayList();
+        [JsonConstructor]
+        public Recipe()
+        {
+        }
         public Product FinalProduct { get; set; }
-
+        
         [JsonInclude]
         public ArrayList Steps { get; private set; } = new ArrayList();
 
